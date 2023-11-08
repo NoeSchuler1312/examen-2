@@ -73,3 +73,20 @@ video {
   block-size: auto;
   vertical-align: middle;
 }
+
+.topbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+nav img {
+  max-height: 47px;
+  margin: 19px 25px 14px;
+}
+
+@media (min-width: 992px) {
+  nav img {
+    max-height: 68px;
+  }
+}
