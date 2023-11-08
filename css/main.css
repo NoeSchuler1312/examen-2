@@ -73,11 +73,14 @@ video {
   vertical-align: middle;
 }
 
+.bg-nav {
+  background-color: var(--black-color);
+}
+
 .topbar {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  background-color: var(--black-color);
 }
 
 nav img {
@@ -91,10 +94,14 @@ nav img {
   }
 }
 
-.titlebox {
-  background-image: url(../img/bg-header-sm.jpg);
+.bg-header {
+  background-image: url(../img/bg-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.titlebox {
   padding: 42px 0 57px;
 }
 
@@ -124,7 +131,35 @@ h1 {
 }
 
 .button p {
+  color: var(--green-color);
   font-size: 18px;
   text-align: center;
   margin: 0;
+}
+
+main {
+  background-color: var(--black-color);
+}
+
+h2 {
+  text-align: center;
+  color: var(--green-color);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+main p {
+  text-align: center;
+  color: var(--white-color);
+  font-size: 16px;
+}
+
+main img {
+  max-width: 229px;
+}
+
+.article {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
