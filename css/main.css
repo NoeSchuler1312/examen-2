@@ -1,4 +1,9 @@
 :root {
+  /* Colors */
+  --black-color: #000;
+  --white-color: #fff;
+  --green-color: #00ff0a;
+  --purple-color: #451076;
 }
 
 * {
@@ -11,13 +16,13 @@
   margin-top: 16px;
 }
 
-.row > .col,
+/* .row > .col,
 .row > [class^="col-"] {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
-}
+} */
 
 html {
   font-size: 16px;
@@ -30,6 +35,8 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
 a {
