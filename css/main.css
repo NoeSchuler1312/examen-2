@@ -146,6 +146,7 @@ h2 {
   color: var(--green-color);
   font-size: 22px;
   font-weight: 500;
+  margin: 55px 0 15px;
 }
 
 main p {
@@ -162,4 +163,12 @@ main img {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+}
+
+.article img {
+  margin: 16px 0 0;
+}
+
+.article .button {
+  margin: 30px 0 101px;
 }
