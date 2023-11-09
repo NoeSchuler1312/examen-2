@@ -59,6 +59,7 @@ body {
   font-size: 1rem;
   line-height: 1.25;
   color: var(--white-color);
+  background-color: var(--black-color);
   font-family: "pixantiquamedium", serif;
 }
 
@@ -227,4 +228,33 @@ h3 {
 
 .card .name {
   font-size: 22px;
+}
+
+.article-subscription h2 {
+  margin: 78px 0 8px;
+}
+
+.article-subscription img {
+  margin: 0 0 6px;
+}
+
+.article-subscription {
+  padding: 0 25px 0;
+}
+
+footer .bg-color {
+  background: rgb(69, 16, 118);
+  background: linear-gradient(
+    180deg,
+    rgba(69, 16, 118, 0.3) 0%,
+    rgba(69, 16, 118, 0.3) 3%,
+    rgba(69, 16, 118, 0.6) 3%,
+    rgba(69, 16, 118, 0.6) 6%,
+    rgba(69, 16, 118, 0.8) 6%,
+    rgba(69, 16, 118, 0.8) 9%,
+    rgba(69, 16, 118, 1) 9%,
+    rgba(69, 16, 118, 1) 100%
+  );
+  padding: 0;
+  margin: 34px 0 0;
 }
