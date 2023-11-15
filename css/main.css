@@ -26,6 +26,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -156,6 +157,10 @@ main p {
   font-size: 16px;
 }
 
+.p-gap {
+  margin: 0 0 22px;
+}
+
 main img {
   max-width: 229px;
 }
@@ -247,14 +252,29 @@ footer .bg-color {
   background: linear-gradient(
     180deg,
     rgba(69, 16, 118, 0.3) 0%,
-    rgba(69, 16, 118, 0.3) 3%,
-    rgba(69, 16, 118, 0.6) 3%,
-    rgba(69, 16, 118, 0.6) 6%,
-    rgba(69, 16, 118, 0.8) 6%,
-    rgba(69, 16, 118, 0.8) 9%,
-    rgba(69, 16, 118, 1) 9%,
+    rgba(69, 16, 118, 0.3) 7.5%,
+    rgba(69, 16, 118, 0.6) 7.5%,
+    rgba(69, 16, 118, 0.6) 15%,
+    rgba(69, 16, 118, 0.8) 15%,
+    rgba(69, 16, 118, 0.8) 22.5%,
+    rgba(69, 16, 118, 1) 22.5%,
     rgba(69, 16, 118, 1) 100%
   );
-  padding: 0;
-  margin: 34px 0 0;
+  padding: 135px 25px 0;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 5px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 61px;
+}
+
+footer img {
+  max-width: 64px;
+  margin: 0 11px 0 0;
 }
