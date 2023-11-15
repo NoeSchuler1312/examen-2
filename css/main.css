@@ -92,8 +92,30 @@ nav img {
 
 @media (min-width: 992px) {
   nav img {
-    max-height: 68px;
+    max-height: 62px;
   }
+
+  .img-menu {
+    display: none;
+  }
+}
+
+.nav-desktop {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 0 0 0;
+}
+
+@media (max-width: 992px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
+.nav-desktop a,
+p {
+  text-decoration: none;
+  font-size: 32px;
 }
 
 .bg-header {
@@ -203,7 +225,7 @@ main img {
 
 .bg-color h2 {
   color: var(--white-color);
-  margin: 109px 0 24px;
+  margin: 109px 0 27px;
 }
 
 h3 {
@@ -220,6 +242,7 @@ h3 {
   align-items: center;
   padding: 0 35px 30px;
   margin: 0 0 60px;
+  height: calc(100% - 60px);
 }
 
 .card img {

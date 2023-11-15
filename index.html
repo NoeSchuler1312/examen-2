@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>La Wyverne</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -15,9 +16,16 @@
             <nav>
               <div class="col-12">
                 <div class="topbar">
-                  <a href=""
-                    ><img src="img/logo-wyverne.png" alt="Logo de La Wyverne"
-                  /></a>
+                  <img src="img/logo-wyverne.svg" alt="Logo de La Wyverne" />
+                  <div class="col-10">
+                    <div class="nav-desktop">
+                      <a href="#menu">Carte</a>
+                      <a href="#suppliers">Fournisseurs</a>
+                      <a href="#subscription">Inscription</a>
+                      <a href="#contacts">Contacts</a>
+                      <p><a href="">FR</a> / <a href="">EN</a></p>
+                    </div>
+                  </div>
                   <img class="img img-menu" src="img/menu.svg" alt="Menu" />
                 </div>
               </div>
@@ -49,14 +57,14 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-6">
-            <div class="article article-daily">
+          <div class="col-12 col-md-6">
+            <div class="article article-daily" id="menu">
               <h2>Plat du jour</h2>
               <p>Assiette du braconnier</p>
               <img src="img/daily-dish.png" alt="Plat du jour" />
             </div>
           </div>
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-md-6">
             <div class="article article-menu">
               <h2>Menu du chef</h2>
               <p class="p-gap">
@@ -78,10 +86,10 @@
           </div>
         </div>
       </div>
-      <div class="bg-color">
+      <div class="bg-color" id="suppliers">
         <div class="row">
           <h2>Fournisseurs</h2>
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="card">
               <img src="img/butcher.png" alt="Kolig le boucher" />
               <h3>Boucher</h3>
@@ -93,7 +101,7 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="card">
               <img src="img/farmer.png" alt="Deloc l'agriculteur" />
               <h3>Agriculteur</h3>
@@ -105,7 +113,7 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="card">
               <img src="img/herbalist.png" alt="Hiriptec l'herboriste" />
               <h3>Herboriste</h3>
@@ -116,7 +124,7 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="card">
               <img src="img/brewer.png" alt="Garikl le brasseur" />
               <h3>Brasseur</h3>
@@ -132,7 +140,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="article article-subscription">
+            <div class="article article-subscription" id="subscription">
               <h2>Inscrivez-vous!</h2>
               <img src="img/book.png" alt="Livre et plume" />
               <p>
@@ -148,9 +156,9 @@
       </div>
     </main>
     <footer>
-      <div class="bg-color">
+      <div class="bg-color" id="contacts">
         <div class="row">
-          <div class="col-6 col-lg-3">
+          <div class="col-6 col-md-3">
             <h4>Horaires</h4>
             <p class="p-gap">
               Ouvert 7 jours sur 7,<br />
@@ -158,7 +166,7 @@
             </p>
             <p>Cuisine ouverte de 7h à 23h.</p>
           </div>
-          <div class="col-6 col-lg-3">
+          <div class="col-6 col-md-3">
             <h4>Adresse</h4>
             <p>
               Impasse du bourbier 7<br />
@@ -166,7 +174,7 @@
               LI-666, Les Limbes
             </p>
           </div>
-          <div class="col-6 col-lg-3">
+          <div class="col-6 col-md-3">
             <h4>Contacts</h4>
             <p>
               Pigeons voyageurs<br />
@@ -174,7 +182,7 @@
               Boule de cristal : DQW4W9WGXCQ
             </p>
           </div>
-          <div class="col-6 col-lg-3">
+          <div class="col-6 col-md-3">
             <a href="https://www.instagram.com/" target="_blank"
               ><img src="img/logo-insta.png" alt="Instagram"
             /></a>
