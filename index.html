@@ -29,7 +29,25 @@
                       <a class="language language-en" href="">EN</a>
                     </p>
                   </div>
-                  <img class="img img-menu" src="img/menu.svg" alt="Menu" />
+                  <div class="burger">
+                    <img class="img img-menu" src="img/menu.svg" alt="Menu" />
+                  </div>
+                  <div class="filter">
+                    <div class="menu">
+                      <ul>
+                        <li><a href="#menu">Carte</a></li>
+                        <li><a href="#suppliers">Fournisseurs</a></li>
+                        <li><a href="#subscription">Inscription</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li>
+                          <p>
+                            <a class="language language-fr" href="">FR</a> /
+                            <a class="language language-en" href="">EN</a>
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </nav>
@@ -59,9 +77,9 @@
     </header>
     <main>
       <div class="container">
-        <div class="row">
+        <div class="row" id="menu">
           <div class="col-12 col-md-6">
-            <div class="article article-daily" id="menu">
+            <div class="article article-daily">
               <h2>Plat du jour</h2>
               <p>Assiette du braconnier</p>
               <img src="img/daily-dish.png" alt="Plat du jour" />
@@ -90,8 +108,8 @@
         </div>
       </div>
       <div class="bg-color-degradee"></div>
-      <div class="bg-color" id="suppliers">
-        <div class="row">
+      <div class="bg-color">
+        <div class="row" id="suppliers">
           <h2>Fournisseurs</h2>
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card">
@@ -143,9 +161,9 @@
       </div>
       <div class="bg-color-degradee-reversed"></div>
       <div class="container">
-        <div class="row">
+        <div class="row" id="subscription">
           <div class="col-12">
-            <div class="article article-subscription" id="subscription">
+            <div class="article article-subscription">
               <h2>Inscrivez-vous!</h2>
               <img src="img/book.png" alt="Livre et plume" />
               <p>
@@ -161,8 +179,8 @@
       </div>
     </main>
     <footer>
-      <div class="bg-color" id="contacts">
-        <div class="row">
+      <div class="bg-color">
+        <div class="row" id="contacts">
           <div class="col-6 col-md-3">
             <h4>Horaires</h4>
             <p class="p-gap">
@@ -199,5 +217,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

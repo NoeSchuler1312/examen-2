@@ -151,6 +151,81 @@ p {
   color: var(--green-color);
 }
 
+.burger {
+  position: fixed;
+  right: 30px;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.filter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: none;
+}
+
+.filter.is-active {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
+.menu {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  bottom: 350px;
+  left: 30px;
+  margin: auto;
+  padding: 50px 30px 0;
+  background: var(--black-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  border: 2px solid var(--white-color);
+  z-index: 1;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    padding: 35px 30px 0;
+    width: 400px;
+    height: 350px;
+  }
+
+  .menu a {
+    font-size: 25px;
+    text-decoration: none;
+  }
+}
+
 .bg-header {
   background-image: url(../img/bg-header.jpg);
   background-repeat: no-repeat;
@@ -177,6 +252,10 @@ h1 {
 
   h1 {
     font-size: 78px;
+  }
+
+  .filter {
+    opacity: 0;
   }
 }
 
