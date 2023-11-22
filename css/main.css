@@ -62,6 +62,7 @@ body {
   color: var(--white-color);
   background-color: var(--black-color);
   font-family: "pixantiquamedium", serif;
+  padding-top: 67px;
 }
 
 a {
@@ -77,9 +78,13 @@ video {
 
 .bg-nav {
   background-color: var(--black-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.topbar {
+.navbar {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -87,15 +92,19 @@ video {
 }
 
 nav img {
-  max-height: 47px;
+  height: 50px;
   margin: 19px 25px 14px;
+}
+
+.img-menu {
+  height: 42px;
 }
 
 .nav-desktop {
   display: flex;
   justify-content: space-between;
   margin: 0 0 0 30px;
-  padding: 27px 0 0 0;
+  padding: 27px 0 0;
 }
 
 @media (max-width: 992px) {
@@ -108,6 +117,22 @@ nav img {
 p {
   text-decoration: none;
   font-size: 24px;
+}
+
+@media (min-width: 1200px) {
+  nav img {
+    height: 55px;
+  }
+
+  .nav-desktop {
+    padding: 25px 0;
+  }
+
+  .nav-desktop a,
+  p {
+    text-decoration: none;
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -150,12 +175,8 @@ h1 {
     display: none;
   }
 
-  nav img {
-    max-height: 55px;
-  }
-
   h1 {
-    font-size: 92px;
+    font-size: 78px;
   }
 }
 
@@ -450,8 +471,8 @@ footer p {
 }
 
 footer img {
-  max-width: 64px;
-  margin: 0 11px 0 0;
+  max-width: 50px;
+  margin: 0 22px 0 0;
 }
 
 @media (min-width: 992px) {
@@ -464,8 +485,7 @@ footer img {
   }
 
   footer img {
-    max-width: 82px;
-    margin: 0;
+    max-width: 65px;
   }
 
   footer .bg-color {
@@ -483,8 +503,8 @@ footer img {
   }
 
   footer img {
-    max-width: 106px;
-    margin: 0;
+    max-width: 82px;
+    margin: 0 28px 0 0;
   }
 
   footer .bg-color {
