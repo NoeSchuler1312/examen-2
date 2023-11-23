@@ -274,13 +274,11 @@ h1 {
   max-width: fit-content;
   margin: auto;
   padding: 7px 16px;
-}
-
-.button p {
   color: var(--green-color);
   font-size: 18px;
   text-align: center;
-  margin: 0;
+  display: block;
+  text-decoration: none;
 }
 
 main {
