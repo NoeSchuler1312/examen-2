@@ -63,6 +63,7 @@ body {
   background-color: var(--black-color);
   font-family: "pixantiquamedium", serif;
   padding-top: 67px;
+  z-index: 1;
 }
 
 a {
@@ -89,6 +90,7 @@ video {
   flex-flow: row nowrap;
   justify-content: space-between;
   max-height: 94px;
+  z-index: 2;
 }
 
 nav img {
@@ -117,6 +119,10 @@ nav img {
 p {
   text-decoration: none;
   font-size: 24px;
+}
+
+a:hover {
+  color: var(--green-color);
 }
 
 @media (min-width: 1200px) {
@@ -192,7 +198,7 @@ p {
   width: 300px;
   height: 350px;
   border: 2px solid var(--white-color);
-  z-index: 1;
+  z-index: 2;
 }
 
 .menu.is-active {
@@ -203,6 +209,11 @@ p {
 .menu a {
   font-size: 20px;
   text-decoration: none;
+  display: block;
+}
+
+.menu .language {
+  display: inline;
 }
 
 ul {
@@ -281,6 +292,11 @@ h1 {
   text-decoration: none;
 }
 
+.button:hover {
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+}
+
 main {
   background-color: var(--black-color);
 }
@@ -321,28 +337,6 @@ main img {
   margin: 30px 0 101px;
 }
 
-@media (min-width: 1200px) {
-  main p {
-    font-size: 30px;
-  }
-
-  .p-gap {
-    margin: 0 0 30px;
-  }
-
-  .article img {
-    max-width: 421px;
-  }
-
-  .button {
-    padding: 10px 30px;
-  }
-
-  .button p {
-    font-size: 35px;
-  }
-}
-
 @media (min-width: 992px) {
   main p {
     font-size: 22px;
@@ -361,15 +355,43 @@ main img {
   }
 
   .button {
-    padding: 8px 27px;
-  }
-
-  .button p {
+    font-size: 35px;
+    padding: 10px 25px;
     font-size: 28px;
   }
 
   h2 {
     font-size: 29px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main p {
+    font-size: 30px;
+  }
+
+  .p-gap {
+    margin: 0 0 30px;
+  }
+
+  .titlebox p {
+    padding: 0 80px 0;
+  }
+
+  .article img {
+    max-width: 421px;
+  }
+
+  .button {
+    border: 3px solid var(--green-color);
+    font-size: 35px;
+    padding: 12px 30px;
+    font-size: 32px;
+  }
+
+  .button:hover {
+    color: var(--white-color);
+    border: 3px solid var(--white-color);
   }
 }
 
@@ -456,6 +478,11 @@ h3 {
 
 .card .name {
   font-size: 22px;
+}
+
+.card:hover {
+  transform: scale(112%);
+  transition: 200ms ease-in-out;
 }
 
 @media (min-width: 992px) {
@@ -552,6 +579,11 @@ footer img {
   margin: 0 22px 0 0;
 }
 
+footer img:hover {
+  transform: scale(115%);
+  transition: 200ms ease-in-out;
+}
+
 @media (min-width: 992px) {
   h4 {
     font-size: 26px;
@@ -567,6 +599,10 @@ footer img {
 
   footer .bg-color {
     padding: 135px 80px 0 120px;
+  }
+
+  .article-subscription p {
+    padding: 0 150px 0;
   }
 }
 
@@ -587,4 +623,19 @@ footer img {
   footer .bg-color {
     padding: 135px 80px 0 150px;
   }
+}
+
+.maintenance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maintenance h2 {
+  color: var(--white-color);
+  margin: 25px 0 30px 0;
+}
+
+.maintenance img {
+  max-width: 130px;
 }
