@@ -18,12 +18,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const audio = document.querySelector("audio");
   audio.volume = 0.5;
   audio.play();
+
+  var mute = document.querySelector(".button-mute");
+
+  var toggleMute = function toggleMute(event) {
+    mute.classList.toggle("is-off");
+
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  };
+
+  mute.addEventListener("click", toggleMute);
 });
-
-var mute = document.querySelector(".button-mute");
-
-var toggleMute = function toggleMute(event) {
-  mute.classList.toggle("is-off");
-};
-
-mute.addEventListener("click", toggleMute);
