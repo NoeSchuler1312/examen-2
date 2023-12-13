@@ -10,8 +10,36 @@ var toggleMenu = function toggleMenu(event) {
   }
 };
 
+var closeMenu = function closeMenu(event) {
+  if (!event.target.classList.contains("menu")) {
+    menu.classList.remove("is-active");
+    filter.classList.remove("is-active");
+  }
+};
+
 burger.addEventListener("click", toggleMenu);
-filter.addEventListener("click", toggleMenu);
+filter.addEventListener("click", closeMenu);
+
+// faire apparaître/disparaître carte
+var maplink = document.querySelector(".map-link");
+var map = document.querySelector(".map");
+
+var toggleMap = function toggleMap(event) {
+  if (!event.target.classList.contains("map")) {
+    map.classList.toggle("is-active");
+    filter.classList.toggle("is-active");
+  }
+};
+
+var closeMap = function closeMap(event) {
+  if (!event.target.classList.contains("map")) {
+    map.classList.remove("is-active");
+    filter.classList.remove("is-active");
+  }
+};
+
+maplink.addEventListener("click", toggleMap);
+filter.addEventListener("click", closeMap);
 
 // musique + bouton pour le son
 window.addEventListener("DOMContentLoaded", (event) => {

@@ -36,27 +36,27 @@
                   <div class="burger">
                     <img class="img img-menu" src="img/menu.svg" alt="Menu" />
                   </div>
-                  <div class="filter">
-                    <div class="menu">
-                      <ul>
-                        <li><a href="#menu">Carte</a></li>
-                        <li><a href="#suppliers">Fournisseurs</a></li>
-                        <li><a href="#subscription">Inscription</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                        <li>
-                          <p>
-                            <a class="language language-fr" href="index.html"
-                              >FR</a
-                            >
-                            /
-                            <a class="language language-en" href="index-en.html"
-                              >EN</a
-                            >
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
+                  <div class="menu">
+                    <img src="img/xmark.svg" alt="Fermer" />
+                    <ul>
+                      <li><a href="#menu">Carte</a></li>
+                      <li><a href="#suppliers">Fournisseurs</a></li>
+                      <li><a href="#subscription">Inscription</a></li>
+                      <li><a href="#contacts">Contacts</a></li>
+                      <li>
+                        <p>
+                          <a class="language language-fr" href="index.html"
+                            >FR</a
+                          >
+                          /
+                          <a class="language language-en" href="index-en.html"
+                            >EN</a
+                          >
+                        </p>
+                      </li>
+                    </ul>
                   </div>
+                  <div class="filter"></div>
                 </div>
               </div>
             </nav>
@@ -182,6 +182,18 @@
         </div>
       </div>
     </main>
+    <div class="button-mute">
+      <img
+        class="button button-on"
+        src="img/speaker-on.svg"
+        alt="Haut-parleur (on)"
+      />
+      <img
+        class="button button-off"
+        src="img/speaker-off.svg"
+        alt="Haut-parleur (off)"
+      />
+    </div>
     <footer>
       <div class="bg-color">
         <div class="row" id="contacts">
@@ -189,18 +201,21 @@
             <h4>Horaires</h4>
             <p class="p-gap">
               Ouvert 7 jours sur 7,<br />
-              24 heures sur 24.
+              24 heures sur 24.<br />
+              <br />
+              Cuisine ouverte de 7h à 23h.
             </p>
-            <p>Cuisine ouverte de 7h à 23h.</p>
           </div>
           <div class="col-6 col-md-3">
             <h4>Adresse</h4>
             <p>
-              Impasse du Bourbier 7<br />
+              Impasse du Bourbier 2<br />
               Forêt des Orphelins<br />
               LI-666, Les Limbes
             </p>
+            <a class="map-link">Voir la carte</a>
           </div>
+          <img class="map" src="img/map.jpg" alt="Carte" />
           <div class="col-6 col-md-3">
             <h4>Contacts</h4>
             <p>
@@ -220,18 +235,7 @@
           </div>
         </div>
       </div>
-      <div class="button-mute">
-        <img
-          class="button button-on"
-          src="img/speaker-on.svg"
-          alt="Haut-parleur (on)"
-        />
-        <img
-          class="button button-off"
-          src="img/speaker-off.svg"
-          alt="Haut-parleur (off)"
-        />
-      </div>
+      <div class="filter"></div>
     </footer>
     <script src="js/main.js"></script>
   </body>
